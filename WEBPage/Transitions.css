@@ -1,0 +1,35 @@
+/* Fade + Blur Overlay */
+.transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.transition-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Page content animation */
+.page-content {
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.page-content.fade-out {
+  opacity: 0;
+  filter: blur(8px);
+}
+
+.page-content.fade-in {
+  opacity: 1;
+  filter: blur(0);
+}
