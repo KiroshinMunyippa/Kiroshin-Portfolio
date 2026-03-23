@@ -1,0 +1,84 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(32px) scale(0.98);
+  transition:
+    opacity 700ms ease,
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.button,
+.site-nav a,
+.mobile-menu a,
+.project-card,
+.project-links a,
+.skill-card,
+.about-card,
+.metric-card,
+.contact-form input,
+.contact-form textarea {
+  transition:
+    transform 240ms ease,
+    background-color 240ms ease,
+    border-color 240ms ease,
+    color 240ms ease,
+    box-shadow 240ms ease;
+}
+
+.button:hover,
+.project-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+.button:focus-visible,
+.project-links a:focus-visible,
+.site-nav a:focus-visible,
+.mobile-menu a:focus-visible,
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.about-card:hover,
+.skill-card:hover,
+.contact-form:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 246, 211, 0.35);
+}
+
+.project-card:hover {
+  border-color: rgba(124, 246, 211, 0.34);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.34);
+}
+
+.project-card:hover .project-glow {
+  transform: scale(1.08);
+}
+
+.project-glow {
+  transition: transform 300ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .button,
+  .site-nav a,
+  .mobile-menu a,
+  .project-card,
+  .project-links a,
+  .skill-card,
+  .about-card,
+  .metric-card,
+  .contact-form input,
+  .contact-form textarea,
+  .project-glow {
+    transition: none;
+  }
+}

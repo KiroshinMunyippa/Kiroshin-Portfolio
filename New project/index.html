@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiroshin Munyippa | Portfolio</title>
+  <meta
+    name="description"
+    content="Kiroshin Munyippa portfolio featuring IT support experience, cloud engineering growth, certifications, and interactive project cards."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="transitions.css">
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home">KM</a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      Menu
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="page-shell">
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">IT Engineer • Cloud Engineer In Development</p>
+        <h1>
+          Kiroshin Munyippa building support-driven systems and growing into cloud engineering.
+        </h1>
+        <p class="hero-text">
+          Cloud Engineer in development with a strong foundation in AWS and hands-on
+          IT support experience across helpdesk, systems support, and infrastructure operations.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="assets/Kiroshin_2026.pdf" download="Kiroshin_2026.pdf">Download CV</a>
+        </div>
+
+        <div class="hero-metrics">
+          <article class="metric-card">
+            <span>Current Role</span>
+            <strong>IT Engineer</strong>
+          </article>
+          <article class="metric-card">
+            <span>Focus Area</span>
+            <strong>AWS and Infrastructure</strong>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="hero-orbit">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="glass-panel">
+            <p class="glass-label">Career Snapshot</p>
+            <h2>Support, systems, cloud growth</h2>
+            <p>
+              Currently preparing for AWS Solutions Architect Associate with a focused interest
+              in cloud security, networking, and scalable architectures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>Crafting thoughtful interfaces with a bold visual edge.</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h3>Who I Am</h3>
+          <p>
+            I am an IT Engineer with a strong support background and a growing cloud skill set.
+            My experience includes troubleshooting, systems support, service operations, and
+            working across enterprise environments.
+          </p>
+        </article>
+
+        <article class="about-card reveal">
+          <h3>What I’m Building Toward</h3>
+          <p>
+            I am building toward cloud engineering by combining practical IT operations experience
+            with AWS learning, infrastructure labs, networking knowledge, and a strong interest in automation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and strengths that shape the way I build.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <span>Support</span>
+          <h3>Helpdesk and End-User Support</h3>
+          <p>First- and second-line support, ServiceNow workflows, SLA-focused issue handling, and user assistance.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <span>Infrastructure</span>
+          <h3>Networking and Systems</h3>
+          <p>TCP/IP, DNS, DHCP, VPNs, routing basics, hardware troubleshooting, and stable system operations.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <span>Cloud</span>
+          <h3>AWS and Azure Foundations</h3>
+          <p>Hands-on cloud learning with AWS, Azure administration exposure, IAM concepts, and scalable architecture interest.</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <span>Professional</span>
+          <h3>Teamwork and Documentation</h3>
+          <p>Documentation, collaboration, prioritization, adaptability, and clear communication across technical teams.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Experience and certification highlights, with cards ready for your project links.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal tilt-card" data-tilt-card>
+          <div class="project-glow"></div>
+          <p class="project-tag">Professional Experience</p>
+          <h3>Enterprise Outsourcing</h3>
+          <p>
+            IT Engineer since June 2025, supporting hardware, software, networks, SolarWinds monitoring,
+            remote access, on-site infrastructure tasks, and operational documentation.
+          </p>
+          <div class="project-links">
+            <a href="https://example.com" target="_blank" rel="noreferrer">Add Project Link</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">Add Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-tilt-card>
+          <div class="project-glow"></div>
+          <p class="project-tag">Professional Experience</p>
+          <h3>Advanced Technology</h3>
+          <p>
+            Desktop Support Technician contracted to ABSA from January 2024 to June 2025,
+            covering workstation support, remote support, ServiceNow incidents, and access control.
+          </p>
+          <div class="project-links">
+            <a href="https://example.com" target="_blank" rel="noreferrer">Add Project Link</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">Add Repository</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-tilt-card>
+          <div class="project-glow"></div>
+          <p class="project-tag">Certifications</p>
+          <h3>AWS and CompTIA Track</h3>
+          <p>
+            AWS Solutions Architect currently learning, AWS Cloud Practitioner completed in 2025,
+            CompTIA A+ completed in 2024, and CompTIA N+ completed in 2023.
+          </p>
+          <div class="project-links">
+            <a href="https://example.com" target="_blank" rel="noreferrer">Add Project Link</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">Add Repository</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect about support, infrastructure, and cloud opportunities.</h2>
+        <p>
+          Based at 25 Grosvenor Road. Reach me directly through the form below and submissions
+          will be sent to my email address with the sender’s name, email, and message.
+        </p>
+        <p>Phone: 0676770889</p>
+        <p>Email: Kiroshinm12142@gmail.com</p>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <input type="hidden" name="_subject" value="New portfolio contact message">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+
+        <button class="button button-primary" type="submit">Send Message</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="animations.js"></script>
+</body>
+</html>
